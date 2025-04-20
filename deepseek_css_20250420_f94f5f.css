@@ -1,0 +1,60 @@
+:root {
+    --primary-color: #28a745;
+    --secondary-color: #ffc107;
+    --dark-color: #343a40;
+    --light-color: #f8f9fa;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/farm-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+}
+
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.product-card {
+    transition: transform 0.3s ease;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-outline-primary {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary-color);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 60px 0;
+    }
+    
+    .display-4 {
+        font-size: 2.5rem;
+    }
+}
